@@ -1,7 +1,11 @@
-import "./App.css";
-
 function App() {
-  return <></>;
+  return (
+    <div>
+      <form>
+        <input placeholder="Search" />
+      </form>
+    </div>
+  );
 }
 
 export default App;
