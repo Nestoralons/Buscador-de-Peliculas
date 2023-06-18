@@ -1,0 +1,9 @@
+.busqueda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+input {
+  text-align: center;
+}
