@@ -1,0 +1,76 @@
+{
+  "Search": [
+    {
+      "Title": "Resident Evil",
+      "Year": "2002",
+      "imdbID": "tt0120804",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Apocalypse",
+      "Year": "2004",
+      "imdbID": "tt0318627",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTc1NTUxMzk0Nl5BMl5BanBnXkFtZTcwNDQ1MDIzMw@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Extinction",
+      "Year": "2007",
+      "imdbID": "tt0432021",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDQ0MWI3MmEtMzM0OC00Y2ViLWE4MDItMzNhNmY1ZTdjMWE2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Afterlife",
+      "Year": "2010",
+      "imdbID": "tt1220634",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjRlMGQ0NmUtM2U2Ny00MTk3LTg5NjAtN2M3Y2JmZjllNjJlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Retribution",
+      "Year": "2012",
+      "imdbID": "tt1855325",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmY0NjcwMWMtN2MyNC00ZmZjLWEwZTAtM2ExYWE1NDUwNWQyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: The Final Chapter",
+      "Year": "2016",
+      "imdbID": "tt2592614",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTc0Mzc2OTQ0Ml5BMl5BanBnXkFtZTgwOTQ5MjE4MDI@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Welcome to Raccoon City",
+      "Year": "2021",
+      "imdbID": "tt6920084",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNjA5NmZkMTYtM2I2Mi00NzJkLWJhZGItOGZhMzE0YTViZDMxXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil",
+      "Year": "2022",
+      "imdbID": "tt9660182",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmVhNzY5YjItMTBlNC00N2ZmLWE5ZGYtMTUzMDA0YjEwOGY0XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Degeneration",
+      "Year": "2008",
+      "imdbID": "tt1174954",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYzUxNmYwMTgtYjAyZi00NjdlLWI2ZjMtNzIyMjIzZTg0NDAwXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Resident Evil: Damnation",
+      "Year": "2012",
+      "imdbID": "tt1753496",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZWFiNzIxYTQtOTFmMS00NmY4LTgzM2YtNDEyOWQzM2IwMGJjXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "96",
+  "Response": "True"
+}

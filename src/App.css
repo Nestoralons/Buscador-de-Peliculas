@@ -4,6 +4,23 @@
   justify-content: center;
   gap: 15px;
 }
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 input {
   text-align: center;
+}
+.error {
+  color: red;
+  text-align: center;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
 }
