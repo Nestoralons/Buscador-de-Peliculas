@@ -3,19 +3,28 @@ import { useMovies } from "./hooks/useMovies";
 import "./App.css";
 import { useSearch } from "./hooks/useSearch";
 import { MoviesVal } from "./components/Poster";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import debounce from "just-debounce-it";
 
 function App() {
   const { search, updateSearch, error } = useSearch();
   const [sort, setSort] = useState(false);
   const { Movies, getMovies, loading } = useMovies({ search, sort });
+  const busqueda = useCallback(
+    debounce((search) => {
+      getMovies({ search });
+    }, 600),
+    [getMovies]
+  );
   const handleSubmit = (e) => {
     e.preventDefault();
     getMovies({ search });
   };
   const handleChange = (event) => {
     if (event.target.value.startsWith(" ")) return;
-    updateSearch(event.target.value);
+    const pelicula = event.target.value;
+    updateSearch(pelicula);
+    busqueda(pelicula);
   };
   function handleSort() {
     setSort(!sort);
