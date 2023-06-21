@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+
+import { useCallback, useEffect, useState } from "react";
 import "./Poster.css";
+import { useCatimage } from "../hooks/useCatimage";
 function Poster({ Movies }) {
   return (
     <ul className="movies">
@@ -15,11 +18,20 @@ function Poster({ Movies }) {
   );
 }
 function NoMoviesResults() {
-  return <p>No se encontraron peliculas para esta busqueda</p>;
+  const { URL } = useCatimage();
+  return URL ? (
+    <img
+      className="gato"
+      src={URL}
+      alt="No se ha encontrado ninguna pelicula"
+    />
+  ) : (
+    ""
+  );
 }
 
 export function MoviesVal({ movies }) {
   const hasMovies = movies?.length > 0;
-  console.log(hasMovies);
+
   return hasMovies ? <Poster Movies={movies} /> : <NoMoviesResults />;
 }

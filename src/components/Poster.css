@@ -18,3 +18,9 @@
   border-radius: 8px;
   margin-top: 10px;
 }
+.gato {
+  margin-top: 7em;
+  border-radius: 25px;
+  max-height: 70%;
+  max-width: 70%;
+}

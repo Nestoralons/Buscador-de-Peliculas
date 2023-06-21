@@ -7,6 +7,7 @@ export const searchMovies = async ({ search }) => {
     );
     const res = await response.json();
     const Peli = res.Search;
+
     return Peli?.map((movie) => ({
       id: movie.imdbID,
       title: movie.Title,

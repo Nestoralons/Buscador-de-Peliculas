@@ -1,22 +1,25 @@
 import { BsSearch } from "react-icons/bs";
-//import { useRef } from "react";
 import { useMovies } from "./hooks/useMovies";
 import "./App.css";
 import { useSearch } from "./hooks/useSearch";
 import { MoviesVal } from "./components/Poster";
+import { useState } from "react";
 
 function App() {
   const { search, updateSearch, error } = useSearch();
-  const { Movies, getMovies, loading } = useMovies({ search });
+  const [sort, setSort] = useState(false);
+  const { Movies, getMovies, loading } = useMovies({ search, sort });
   const handleSubmit = (e) => {
     e.preventDefault();
-    getMovies();
+    getMovies({ search });
   };
   const handleChange = (event) => {
     if (event.target.value.startsWith(" ")) return;
     updateSearch(event.target.value);
   };
-
+  function handleSort() {
+    setSort(!sort);
+  }
   return (
     <div className="page">
       <header>
@@ -33,6 +36,7 @@ function App() {
                 borderColor: error ? "red" : "transparent",
               }}
             />
+            <input type="checkbox" onChange={handleSort} checked={sort} />
             <button disabled={error ? true : false} type="submit">
               <BsSearch />
             </button>
