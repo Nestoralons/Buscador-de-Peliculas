@@ -6,7 +6,6 @@ export function useCatimage() {
   // eslint-disable-next-line no-unused-vars
   const [URL, setURL] = useState("");
   useEffect(() => {
-    console.log("me renderizo");
     const busqueda = async () => {
       const res = await fetch(
         `https://cataas.com/cat/says/${palabra}?size=50&color=red&json=true`

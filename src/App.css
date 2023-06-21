@@ -27,3 +27,13 @@ input {
   width: 100%;
   max-width: 800px;
 }
+.caja {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+strong {
+  font-size: 0.8em;
+}

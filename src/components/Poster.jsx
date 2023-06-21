@@ -30,8 +30,14 @@ function NoMoviesResults() {
   );
 }
 
-export function MoviesVal({ movies }) {
+export function MoviesVal({ movies, search }) {
   const hasMovies = movies?.length > 0;
 
-  return hasMovies ? <Poster Movies={movies} /> : <NoMoviesResults />;
+  return hasMovies ? (
+    <Poster Movies={movies} />
+  ) : search.length > 0 ? (
+    <NoMoviesResults />
+  ) : (
+    ""
+  );
 }

@@ -17,7 +17,7 @@ export function useSearch() {
       return;
     }
     if (search.length < 3) {
-      setError("Debe ingresar al menos 3 Carácteres");
+      setError("Debe ingresar al menos 3 Caracteres");
       return;
     }
     setError(null);

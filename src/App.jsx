@@ -45,16 +45,23 @@ function App() {
                 borderColor: error ? "red" : "transparent",
               }}
             />
-            <input type="checkbox" onChange={handleSort} checked={sort} />
             <button disabled={error ? true : false} type="submit">
               <BsSearch />
             </button>
+            <div className="caja">
+              <strong> Sort </strong>
+              <input type="checkbox" onChange={handleSort} checked={sort} />
+            </div>
           </div>
         </form>
         {error && <p className="error">{error}</p>}
       </header>
       <main>
-        {loading ? <p>Cargando...</p> : <MoviesVal movies={Movies} />}
+        {loading ? (
+          <p>Cargando...</p>
+        ) : (
+          <MoviesVal movies={Movies} search={search} />
+        )}
       </main>
     </div>
   );
